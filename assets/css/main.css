@@ -39,6 +39,18 @@ body {
 .swiper-slide:active {
   cursor: grabbing;
 }
+.top-20 {
+  top: 40px;
+}
+.t-x {
+  transform: translateX(-50%);
+}
+.start-33 {
+  left: 33%;
+}
+.start-66 {
+  left: 66%;
+}
 /* ==================================
 #header
 ================================== */
@@ -61,8 +73,9 @@ header nav .navbar-nav a.nav-link.active {
   color: var(--main-color);
 }
 /* ==================================
-#hero
+#index page
 ================================== */
+/* ----- #hero ----- */
 #hero h1 {
   font-family: var(--main-font);
 }
@@ -80,10 +93,7 @@ header nav .navbar-nav a.nav-link.active {
   filter: blur(0px);
   opacity: 1;
 }
-
-/* ==================================
-#languages
-================================== */
+/* ----- #languages ----- */
 #languages {
   background: url(../images/world-map.png);
   background-position: center center;
@@ -106,9 +116,7 @@ header nav .navbar-nav a.nav-link.active {
 #languages p {
   opacity: 0.6;
 }
-/* ==================================
-#resources
-================================== */
+/* ----- #resources ----- */
 #resources p {
   opacity: 0.6;
 }
@@ -145,25 +153,19 @@ header nav .navbar-nav a.nav-link.active {
   border-right: 4px solid var(--third-color);
   border-left: 4px solid var(--third-color);
 }
-/* ==================================
-#client
-================================== */
+/* ----- #client ----- */
 #client h2 {
   font-family: var(--main-font);
 }
 #client p {
   opacity: 0.6;
 }
-/* ==================================
-#counter
-================================== */
+/* ----- #counter ----- */
 #counter h3,
 #counter h3 span {
   color: var(--main-color);
 }
-/* ==================================
-#faq
-================================== */
+/* ----- #faq ----- */
 #faq h2 {
   font-family: var(--main-font);
 }
@@ -178,9 +180,7 @@ header nav .navbar-nav a.nav-link.active {
 #faq .tab-content {
   background-color: rgba(255, 255, 255, 0.1);
 }
-/* ==================================
-#expert
-================================== */
+/* ----- #expert ----- */
 #expert {
   background: url(../images/expert-1.png);
   background-position: top right;
@@ -214,6 +214,77 @@ footer i {
   font-size: 32px;
 }
 /* ==================================
+#aboutUs page
+================================== */
+/* ----- #aboutUs ----- */
+#aboutUs {
+  background: url(../images/about.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+#aboutUs h1 {
+  font-family: var(--main-font);
+}
+/* ----- #vision ----- */
+#vision {
+  background-image: url(../images/about-2.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+/* ----- #whyus ----- */
+#whyUs nav,
+#whyUs .scrollspy {
+  background-color: var(--darker-bg);
+  border: 3px solid var(--main-color);
+}
+#whyUs .scrollspy {
+  max-height: 350px;
+}
+#whyUs .scrollspy::-webkit-scrollbar {
+  width: 20px;
+}
+#whyUs .scrollspy::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+#whyUs .scrollspy::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+}
+#whyUs nav a.nav-link.active {
+  background-color: var(--main-color);
+  border-radius: 0px;
+}
+/* ----- #translation ----- */
+#translation {
+  background: var(--second-color);
+}
+#translation .container-fluid {
+  background: url(../images/bg-light.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+/* ----- #team ----- */
+#team .card .circleImage {
+  border: 3px solid var(--third-color);
+}
+#team .card .circleImage p {
+  background-color: var(--main-color);
+  font-family: var(--main-font);
+  width: 84px;
+  height: 84px;
+}
+#team .card-body h5 {
+  color: var(--third-color);
+}
+#team .card-body small {
+  color: var(--main-color);
+}
+#team .cycle button.btn {
+  background-color: var(--main-color);
+}
+/* ==================================
 #Media Query
 ================================== */
 @media (max-width: 992px) {
@@ -239,5 +310,8 @@ footer i {
     border-bottom: 4px solid var(--third-color);
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+  }
+  .t-x-sm {
+    transform: translateX(0);
   }
 }
