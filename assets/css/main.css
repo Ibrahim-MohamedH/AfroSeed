@@ -51,6 +51,12 @@ body {
 .start-66 {
   left: 66%;
 }
+.start-95 {
+  left: 95%;
+}
+.caustics {
+  font-family: var(--main-font);
+}
 /* ==================================
 #header
 ================================== */
@@ -232,6 +238,9 @@ footer i {
   background-repeat: no-repeat;
   background-size: 100%;
 }
+#vision p {
+  opacity: 0.6;
+}
 /* ----- #whyus ----- */
 #whyUs nav,
 #whyUs .scrollspy {
@@ -283,6 +292,12 @@ footer i {
 }
 #team .cycle button.btn {
   background-color: var(--main-color);
+}
+#team button.position-absolute {
+  color: var(--font-color);
+}
+#team p.position-absolute {
+  color: var(--third-color);
 }
 /* ==================================
 #Media Query
