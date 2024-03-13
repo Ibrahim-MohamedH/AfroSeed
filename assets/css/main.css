@@ -480,6 +480,11 @@ footer i {
 /* ==================================
 #Careers page
 ================================== */
+#careers {
+  background: url(../images/about-2.png);
+  background-size: 100%;
+  background-repeat: repeat-y;
+}
 #careers h2 {
   font-family: var(--main-font);
 }
@@ -513,7 +518,6 @@ footer i {
 #careers .cl::file-selector-button {
   display: none;
 }
-
 #careers .cl-2 {
   background-color: var(--main-color);
   color: var(--font-main);
