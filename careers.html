@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AfroSeed</title>
+    <!-- google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap 5.3.2 -->
+    <link
+      rel="stylesheet"
+      href="./assets/vendors/bootstrap/css/bootstrap.min.css"
+    />
+    <!-- fontawesome 6.5.1 -->
+    <link
+      rel="stylesheet"
+      href="./assets/vendors/fontawesome/css/all.min.css"
+    />
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="./assets/vendors/swiper/swiper-bundle.min.css"
+    />
+    <!-- main CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <header class="fixed-top">
+      <nav class="navbar navbar-expand-lg pb-0">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="./assets/images/logo.png" class="img-fluid" alt="" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="solutions.html">Solution</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="experties.html"
+                  >Fields of Expertise</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Languages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="careers.html">Careers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">FAQs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactUs.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <img src="./assets/images/break.png" class="break" alt="break" />
+    </header>
+    <main class="pt-5">
+      <section id="careers" class="py-5">
+        <div
+          class="position-fixed col-lg-3 col-md-4 col-sm-6 col-8 end-0 top-15 success"
+        >
+          <div class="container-fluid p-4 pe-5">
+            <p>
+              <i class="fa-regular fa-rectangle-xmark float-end fs-3"></i>
+              Information has been sent successfully. We will contact you as
+              soon as possible
+            </p>
+          </div>
+        </div>
+        <div class="container py-5">
+          <h2 class="text-center mb-5 display-5">Join our team</h2>
+          <nav class="nav nav-pills flex-column flex-sm-row">
+            <button
+              class="flex-sm-fill rounded-0 text-sm-center nav-link active"
+              id="home-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#employer"
+              type="button"
+              role="tab"
+              aria-controls="employer"
+              aria-selected="true"
+            >
+              Employer
+            </button>
+            <button
+              class="flex-sm-fill rounded-0 text-sm-center nav-link"
+              id="home-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#vendors"
+              type="button"
+              role="tab"
+              aria-controls="vendors"
+              aria-selected="true"
+            >
+              Vendors
+            </button>
+          </nav>
+          <div class="p-3 tab-content" id="myTabContent">
+            <div
+              class="tab-pane fade show active"
+              id="employer"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+              tabindex="0"
+            >
+              <form class="container">
+                <div class="row">
+                  <div class="form-group mb-4 col-12 col-md-6">
+                    <label for="e-name" class="form-label fs-5"
+                      >Full-Name</label
+                    >
+                    <input
+                      type="text"
+                      name="e-name"
+                      id="e-name"
+                      placeholder="Enter Your Full Name"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="form-group mb-4 col-12 col-md-6">
+                    <label for="e-email" class="form-label fs-5">Email</label>
+                    <input
+                      type="e-email"
+                      name="e-email"
+                      id="e-email"
+                      placeholder="example@gmail.com"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="form-group mb-4 col-12 col-md-6">
+                    <label for="e-phone" class="form-label fs-5"
+                      >Phone Number</label
+                    >
+                    <input
+                      type="text"
+                      name="e-phone"
+                      id="e-phone"
+                      placeholder="+201140093466"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="form-group mb-4 col-12 col-md-6">
+                    <label for="e-country" class="form-label fs-5"
+                      >Country</label
+                    >
+                    <input
+                      type="text"
+                      name="e-country"
+                      id="e-country"
+                      placeholder="egypt"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="form-group mb-4 col-12 col-md-6">
+                    <label for="e-yearsExperience" class="form-label fs-5"
+                      >Years of experience
+                    </label>
+                    <input
+                      type="text"
+                      name="e-yearsExperience"
+                      id="e-yearsExperience"
+                      placeholder="2"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="form-group mb-4 col-12 col-md-6">
+                    <label for="e-educationDegree" class="form-label fs-5"
+                      >Education degree</label
+                    >
+                    <select
+                      class="form-select form-control"
+                      aria-label=""
+                      id="e-educationDegree"
+                    >
+                      <option>select education degree</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="form-group mb-4 col-12 col-md-6">
+                    <label for="e-inputLanguage1" class="form-label fs-5"
+                      >Input Language 1</label
+                    >
+                    <select
+                      class="form-select form-control"
+                      aria-label=""
+                      id="e-inputLanguage1"
+                    >
+                      <option>select language</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="form-group mb-4 col-12 col-md-6">
+                    <label for="e-inputLanguag2" class="form-label fs-5"
+                      >Input Language 2</label
+                    >
+                    <select
+                      class="form-select form-control"
+                      aria-label=""
+                      id="e-inputLanguag2"
+                    >
+                      <option>select language</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="form-group mb-4 col-12 col-md-6">
+                    <label for="e-inputLanguag3" class="form-label fs-5"
+                      >Input Language 3</label
+                    >
+                    <select
+                      class="form-select form-control"
+                      aria-label=""
+                      id="e-inputLanguag3"
+                    >
+                      <option>select language</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="form-group mb-4 col-12 col-md-6">
+                    <label for="e-nativeLanguage" class="form-label fs-5"
+                      >Native language
+                    </label>
+                    <select
+                      class="form-select form-control"
+                      aria-label=""
+                      id="e-nativeLanguage"
+                    >
+                      <option>select Your native language</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="form-group mb-4 col-12 col-md-6">
+                    <label for="e-translationRate" class="form-label fs-5"
+                      >Translation Rate (USD)</label
+                    >
+                    <input
+                      type="text"
+                      name="e-translationRate"
+                      id="e-translationRate"
+                      placeholder="$30"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="form-group mb-4 col-12 col-md-6">
+                    <label for="e-proofreadingRate" class="form-label fs-5"
+                      >Proofreading Rate (USD)</label
+                    >
+                    <input
+                      type="text"
+                      name="e-proofreadingRate"
+                      id="e-proofreadingRate"
+                      placeholder="$40"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="form-group mb-4 col-12 col-md-6">
+                    <label for="e-paymentMethod" class="form-label fs-5"
+                      >Payment Method</label
+                    >
+                    <select
+                      class="form-select form-control"
+                      aria-label=""
+                      id="e-paymentMethod"
+                    >
+                      <option>select payment method</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="form-group mb-4 col-12 col-md-6">
+                    <label for="e-dailyWordsOutput" class="form-label fs-5"
+                      >Daily Words Output</label
+                    >
+                    <input
+                      type="text"
+                      name="e-dailyWordsOutput"
+                      id="e-dailyWordsOutput"
+                      placeholder="200000"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="form-group mb-4 col-12 col-md-6">
+                    <label for="e-profileLink" class="form-label fs-5"
+                      >Profile Link</label
+                    >
+                    <input
+                      type="text"
+                      name="e-profileLink"
+                      id="e-profileLink"
+                      placeholder="https://www.example.com"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="form-group mb-4 col-12 col-md-6">
+                    <label for="e-translationArea" class="form-label fs-5"
+                      >Translation area</label
+                    >
+                    <input
+                      type="text"
+                      name="e-translationArea"
+                      id="e-translationArea"
+                      placeholder="middle East "
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="form-group mb-4 col-12">
+                    <label for="e-service" class="form-label fs-5"
+                      >Additional Services Provided</label
+                    >
+                    <textarea
+                      class="form-control"
+                      name="e-service"
+                      id="e-service"
+                      cols="30"
+                      rows="10"
+                      placeholder="0 of 1000 characters used"
+                    ></textarea>
+                  </div>
+                  <div class="form-group mb-5 col-12">
+                    <div class="input-group mb-3">
+                      <label class="input-group-text cl-2" for="formFile"
+                        >Brows File</label
+                      >
+                      <input
+                        type="file"
+                        class="form-control cl form-control-lg"
+                        id="formFile"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <button
+                      name="send"
+                      class="btn btn-main col-12 py-3 rounded-0 fs-5"
+                    >
+                      Send
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="vendors"
+              role="tabpanel"
+              aria-labelledby="profile-tab"
+              tabindex="0"
+            >
+              <form class="container">
+                <div class="row">
+                  <div class="form-group mb-4 col-12 col-md-6">
+                    <label for="v-name" class="form-label fs-5"
+                      >Full-Name</label
+                    >
+                    <input
+                      type="text"
+                      name="v-name"
+                      id="v-name"
+                      placeholder="Enter Your Full Name"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="form-group mb-4 col-12 col-md-6">
+                    <label for="v-email" class="form-label fs-5">Email</label>
+                    <input
+                      type="v-email"
+                      name="v-email"
+                      id="v-email"
+                      placeholder="example@gmail.com"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="form-group mb-4 col-12 col-md-6">
+                    <label for="v-phone" class="form-label fs-5"
+                      >Phone Number</label
+                    >
+                    <input
+                      type="text"
+                      name="v-phone"
+                      id="v-phone"
+                      placeholder="+201140093466"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="form-group mb-4 col-12 col-md-6">
+                    <label for="v-country" class="form-label fs-5"
+                      >Country</label
+                    >
+                    <input
+                      type="text"
+                      name="v-country"
+                      id="v-country"
+                      placeholder="egypt"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="form-group mb-4 col-12 col-md-6">
+                    <label for="v-yearsExperience" class="form-label fs-5"
+                      >Years of experience
+                    </label>
+                    <input
+                      type="text"
+                      name="v-yearsExperience"
+                      id="v-yearsExperience"
+                      placeholder="2"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="form-group mb-4 col-12 col-md-6">
+                    <label for="v-educationDegree" class="form-label fs-5"
+                      >Education degree</label
+                    >
+                    <select
+                      class="form-select form-control"
+                      aria-label=""
+                      id="v-educationDegree"
+                    >
+                      <option>select education degree</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="form-group mb-4 col-12 col-md-6">
+                    <label for="v-inputLanguage1" class="form-label fs-5"
+                      >Input Language 1</label
+                    >
+                    <select
+                      class="form-select form-control"
+                      aria-label=""
+                      id="v-inputLanguage1"
+                    >
+                      <option>select language</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="form-group mb-4 col-12 col-md-6">
+                    <label for="v-inputLanguag2" class="form-label fs-5"
+                      >Input Language 2</label
+                    >
+                    <select
+                      class="form-select form-control"
+                      aria-label=""
+                      id="v-inputLanguag2"
+                    >
+                      <option>select language</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="form-group mb-4 col-12 col-md-6">
+                    <label for="v-inputLanguag3" class="form-label fs-5"
+                      >Input Language 3</label
+                    >
+                    <select
+                      class="form-select form-control"
+                      aria-label=""
+                      id="v-inputLanguag3"
+                    >
+                      <option>select language</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="form-group mb-4 col-12 col-md-6">
+                    <label for="v-nativeLanguage" class="form-label fs-5"
+                      >Native language
+                    </label>
+                    <select
+                      class="form-select form-control"
+                      aria-label=""
+                      id="v-nativeLanguage"
+                    >
+                      <option>select Your native language</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="form-group mb-4 col-12 col-md-6">
+                    <label
+                      for="v-languageYouSpecialized"
+                      class="form-label fs-5"
+                      >language you specialized</label
+                    >
+                    <input
+                      type="text"
+                      name="v-languageYouSpecialized"
+                      id="v-languageYouSpecialized"
+                      placeholder="select language"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="form-group mb-4 col-12 col-md-6">
+                    <label for="v-translationRate" class="form-label fs-5"
+                      >Translation Rate (USD)</label
+                    >
+                    <input
+                      type="text"
+                      name="v-translationRate"
+                      id="v-translationRate"
+                      placeholder="$30"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="form-group mb-4 col-12 col-md-6">
+                    <label for="v-proofreadingRate" class="form-label fs-5"
+                      >Proofreading Rate (USD)</label
+                    >
+                    <input
+                      type="text"
+                      name="v-proofreadingRate"
+                      id="v-proofreadingRate"
+                      placeholder="$40"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="form-group mb-4 col-12 col-md-6">
+                    <label for="v-paymentMethod" class="form-label fs-5"
+                      >Payment Method</label
+                    >
+                    <select
+                      class="form-select form-control"
+                      aria-label=""
+                      id="v-paymentMethod"
+                    >
+                      <option>select payment method</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="form-group mb-4 col-12 col-md-6">
+                    <label for="v-dailyWordsOutput" class="form-label fs-5"
+                      >Daily Words Output</label
+                    >
+                    <input
+                      type="text"
+                      name="v-dailyWordsOutput"
+                      id="v-dailyWordsOutput"
+                      placeholder="200000"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="form-group mb-4 col-12 col-md-6">
+                    <label for="v-profileLink" class="form-label fs-5"
+                      >Profile Link</label
+                    >
+                    <input
+                      type="text"
+                      name="v-profileLink"
+                      id="v-profileLink"
+                      placeholder="https://www.example.com"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="form-group mb-4 col-12 col-md-6">
+                    <label for="v-translationArea" class="form-label fs-5"
+                      >Translation area</label
+                    >
+                    <input
+                      type="text"
+                      name="v-translationArea"
+                      id="v-translationArea"
+                      placeholder="middle East "
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="form-group mb-4 col-12 col-md-6">
+                    <label for="v-fullTimeOrPartTime" class="form-label fs-5"
+                      >Full time or Part time</label
+                    >
+                    <select
+                      class="form-select form-control"
+                      aria-label=""
+                      id="v-fullTimeOrPartTime"
+                    >
+                      <option>select time</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="form-group mb-4 col-12">
+                    <label for="v-service" class="form-label fs-5"
+                      >Additional Services Provided</label
+                    >
+                    <textarea
+                      class="form-control"
+                      name="v-service"
+                      id="v-service"
+                      cols="30"
+                      rows="10"
+                      placeholder="0 of 1000 characters used"
+                    ></textarea>
+                  </div>
+                  <div class="form-group mb-5 col-12">
+                    <div class="input-group mb-3">
+                      <label class="input-group-text cl-2" for="formFile"
+                        >Brows File</label
+                      >
+                      <input
+                        type="file"
+                        class="form-control cl form-control-lg"
+                        id="formFile"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <button
+                      name="send"
+                      class="btn btn-main col-12 py-3 rounded-0 fs-5"
+                    >
+                      Send
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="pt-5">
+      <div class="container">
+        <div class="row justify-content-center text-lg-start text-center">
+          <div class="col-lg-4 col-md-8">
+            <div class="logo mb-3">
+              <img src="./assets/images/logo.png" alt="" class="img-fluid" />
+            </div>
+            <p class="text-logo">
+              Our translations surpass the limits of language!
+            </p>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-reset text-decoration-none">Home</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-reset text-decoration-none">About us</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-reset text-decoration-none"
+                  >Solutions</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-reset text-decoration-none"
+                  >Fields of Expertise</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#" class="text-reset text-decoration-none"
+                  >Languages</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-reset text-decoration-none">careers</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-reset text-decoration-none">FAQs</a>
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-reset text-decoration-none"
+                  >Contact us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-8">
+            <p class="text-center">Follow us on Social Media Platforms</p>
+            <p class="text-center">
+              <a href="#" class="text-reset text-decoration-none"
+                ><i class="fa-brands fa-square-facebook me-4"></i
+              ></a>
+              <a href="#" class="text-reset text-decoration-none">
+                <i class="fa-brands fa-linkedin"></i
+              ></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/images/break.png" alt="" class="break" />
+      <p class="text-center py-3 mb-0">
+        Copyright 2024 Afroseed, All rights reserved.
+      </p>
+    </footer>
+    <!-- Bootstrap -->
+    <script src="./assets/vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Swipper -->
+    <script src="./assets/vendors/swiper/swiper-bundle.min.js"></script>
+    <!-- PureCounter -->
+    <script src="./assets/vendors/purecounter/purecounter_vanilla.js"></script>
+
+    <!-- main JS -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

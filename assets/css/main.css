@@ -51,6 +51,9 @@ body {
 .t-x {
   transform: translateX(-50%);
 }
+.op-6 {
+  opacity: 0.6;
+}
 .start-33 {
   left: 33%;
 }
@@ -169,8 +172,15 @@ header nav .navbar-nav a.nav-link.active {
 #client h2 {
   font-family: var(--main-font);
 }
-#client p {
+#client .container > p {
   opacity: 0.6;
+}
+#client .row .card {
+  border: 1px solid var(--third-color);
+  border-radius: 0px;
+}
+#client .row .card .card-title {
+  color: var(--third-color);
 }
 /* ----- #counter ----- */
 #counter h3,
@@ -363,6 +373,165 @@ footer i {
   border-radius: 0px;
 }
 /* ==================================
+#solutions page
+================================== */
+/* ----- #solution ----- */
+#solution {
+  background: url(../images/Afroseed\ Solutions\ Structure.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/* ----- #technology ----- */
+#technology .card {
+  border: 1px solid var(--third-color);
+  border-radius: 0px;
+  height: 300px;
+  overflow-y: scroll;
+}
+#technology .card::-webkit-scrollbar {
+  width: 5px;
+}
+#technology .card::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+#technology .card::-webkit-scrollbar-thumb {
+  background: var(--third-color);
+  border-radius: 5px;
+}
+#technology .card .card-title {
+  color: var(--third-color);
+}
+/* ----- #interpreting ----- */
+#interpreting h2 {
+  color: var(--main-color);
+}
+/* ----- #engineering ----- */
+#engineering {
+  background: var(--second-color);
+}
+#engineering .container-fluid {
+  background: url(../images/bg-light.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+#engineering .card {
+  border: none;
+  border-right: 3px solid var(--third-color);
+  height: 230px;
+  overflow-y: scroll;
+}
+#engineering .card .card-title {
+  color: var(--third-color);
+}
+#engineering .card .card-text {
+  opacity: 0.8;
+}
+#engineering .card::-webkit-scrollbar {
+  width: 5px;
+}
+#engineering .card::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+#engineering .card::-webkit-scrollbar-thumb {
+  background: var(--third-color);
+  border-radius: 5px;
+}
+/* ----- #TandL ----- */
+#TandL nav,
+#TandL .scrollspy {
+  background-color: var(--darker-bg);
+  border: 3px solid var(--main-color);
+}
+#TandL .scrollspy {
+  max-height: 350px;
+}
+#TandL .scrollspy::-webkit-scrollbar {
+  width: 20px;
+}
+#TandL .scrollspy::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+#TandL .scrollspy::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+}
+#TandL nav a.nav-link.active {
+  background-color: var(--main-color);
+  border-radius: 0px;
+}
+/* ----- #multimedia ----- */
+#multimedia .card {
+  background: url(../images/Artist\ Card.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 0px;
+  border: 1px solid var(--third-color);
+}
+#multimedia .card .card-title {
+  color: var(--third-color);
+}
+#gaming {
+  background: url(../images/image\ 2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* ==================================
+#Careers page
+================================== */
+#careers h2 {
+  font-family: var(--main-font);
+}
+#careers nav button.nav-link {
+  background-color: var(--darker-bg);
+  border: 1px solid var(--main-color);
+  color: var(--font-color);
+}
+#careers nav button.nav-link.active {
+  background-color: var(--main-color);
+}
+#careers .form-control:focus,
+#careers .form-control:focus-within,
+#careers .form-control:focus-visible,
+#careers .form-control {
+  background-color: var(--darker-bg);
+  color: var(--font-color);
+  border-radius: 0;
+  border: 1px solid var(--main-color);
+  box-shadow: none;
+}
+#careers .form-control::placeholder,
+#careers .form-select,
+#careers .form-select option,
+#careers .input-group input {
+  color: #ffffff80;
+}
+#careers .form-select option:hover {
+  background-color: var(--main-color);
+}
+#careers .cl::file-selector-button {
+  display: none;
+}
+
+#careers .cl-2 {
+  background-color: var(--main-color);
+  color: var(--font-main);
+  border: 0;
+  border-radius: 0px;
+}
+#careers .success {
+  z-index: 12;
+}
+#careers .success i:hover {
+  cursor: pointer;
+}
+#careers .success .container-fluid {
+  background: url(../images/form.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+/* ==================================
 #Media Query
 ================================== */
 @media (max-width: 992px) {
@@ -392,4 +561,9 @@ footer i {
   .t-x-sm {
     transform: translateX(0);
   }
+  #technology .card {
+    height: 200px;
+  }
 }
+/* @media (max-width: 576px) {
+} */
